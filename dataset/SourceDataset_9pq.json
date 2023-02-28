@@ -1,0 +1,29 @@
+{
+	"name": "SourceDataset_9pq",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/odi/ffdd/cmpl/FLAT_CMPL.zip"
+			},
+			"columnDelimiter": "\t",
+			"compressionCodec": "ZipDeflate",
+			"compressionLevel": "Optimal",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
